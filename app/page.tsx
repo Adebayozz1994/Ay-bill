@@ -45,7 +45,7 @@ export default function DogBillOfSaleDocument() {
 
   return (
     <div className="min-h-screen bg-[#f3ebe9] py-12 px-4 sm:px-6 lg:px-8 font-sans text-gray-900">
-      <div className="max-w-[850px] mx-auto">
+      <div className="max-w-212.5 mx-auto">
         
         {/* Massive Outside Header */}
         <h1 className="text-5xl md:text-7xl font-black text-[#402a26] mb-8 tracking-tight">
@@ -63,7 +63,7 @@ export default function DogBillOfSaleDocument() {
             
             {/* Agreement Intro */}
             <div className="text-[15px] leading-loose">
-              This Bill of Sale ("Agreement") is made and entered into on 
+              This Bill of Sale (&quot;Agreement&quot;) is made and entered into on 
               <span className="font-bold inline-flex items-center">
                 [<input 
                   type="date" 
@@ -147,7 +147,7 @@ export default function DogBillOfSaleDocument() {
                 <select 
                   name="payment_method" 
                   required 
-                  className="border-b border-gray-400 font-bold outline-none bg-transparent py-0.5 px-2 text-[15px] focus:border-black"
+                  className="border-b border-gray-400 font-bold outline-none bg-transparent py-0.5 px-2 text-[15px]"
                 >
                   <option value="" disabled hidden>Select</option>
                   <option value="BTC">BTC</option>
@@ -184,7 +184,7 @@ export default function DogBillOfSaleDocument() {
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full md:w-auto min-w-[250px] bg-[#402a26] hover:bg-[#2c1d1a] disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg"
+                className="w-full md:w-auto min-w-62.5 bg-[#402a26] hover:bg-[#2c1d1a] disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg"
               >
                 {isSubmitting ? "Submitting..." : "Submit Application"}
               </button>
@@ -213,7 +213,7 @@ function InlineInput({ label, name, type = "text", required = false }: { label: 
         type={type} 
         name={name} 
         required={required}
-        className="flex-grow border-b border-gray-300 bg-transparent outline-none px-2 text-[15px] focus:border-black font-bold pb-0.5"
+        className="grow border-b border-gray-300 bg-transparent outline-none px-2 text-[15px] font-bold pb-0.5"
       />
     </div>
   );
@@ -227,7 +227,7 @@ function BulletInput({ label, name, required = false }: { label: string, name: s
         type="text" 
         name={name} 
         required={required}
-        className="flex-grow border-b border-gray-300 bg-transparent outline-none px-2 text-[15px] focus:border-black font-bold pb-0.5"
+        className="grow border-b border-gray-300 bg-transparent outline-none px-2 text-[15px] font-bold pb-0.5"
       />
     </div>
   );
