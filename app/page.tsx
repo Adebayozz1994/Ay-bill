@@ -13,7 +13,7 @@ export default function DogBillOfSaleDocument() {
 
     const formData = new FormData(e.currentTarget);
     // Add your Web3Forms Access Key here
-    formData.append("access_key", "e01847f3-9b79-41ff-86c7-b07cca510155"); 
+    formData.append("access_key", "6cc1d830-95f9-4d27-a338-62beb74f2741"); 
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
